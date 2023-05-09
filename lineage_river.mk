@@ -21,6 +21,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 
 # Inherit some common Lineage stuff
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+RISING_MAINTAINER := FPSensor
+TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_BOOT_ANIMATION_RES := 1080
+RISING_CHIPSET := sdm632
 
 # Inherit from river device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
